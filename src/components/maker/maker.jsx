@@ -32,7 +32,7 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
       if (user) {
         setUserId(user.uid);
       } else {
-        history.push("/");
+        history.push("/business_card_maker");
       }
     });
   }, [authService, userId, history]);
