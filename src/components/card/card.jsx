@@ -1,7 +1,8 @@
 import React, { memo } from "react";
 import styles from "./card.module.css";
 
-const DEFAULT_IMAGE = "images/default_logo.png";
+const DEFAULT_IMAGE =
+  "https://res.cloudinary.com/dczgrcjnn/image/upload/v1617699172/logo/default_logo_mlzxpk.png";
 const Card = memo(({ card }) => {
   const { name, company, title, email, message, theme, fileURL } = card;
   const url = fileURL || DEFAULT_IMAGE;

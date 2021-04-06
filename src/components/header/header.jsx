@@ -12,7 +12,11 @@ const Header = memo(({ onLogout, loginHead }) => (
       <h1 className={`${styles.title} ${styles.loginHead}`}>Business Card</h1>
     ) : (
       <>
-        <img className={styles.earth} src="images/earth.png" alt="earth" />
+        <img
+          className={styles.earth}
+          src="https://res.cloudinary.com/dczgrcjnn/image/upload/v1617699172/logo/earth_qx9stj.png"
+          alt="earth"
+        />
         <h1 className={styles.title}>Business Card</h1>
       </>
     )}
