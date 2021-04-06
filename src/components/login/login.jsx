@@ -5,6 +5,7 @@ import Header from "../header/header";
 import styles from "./login.module.css";
 
 const Login = ({ authService }) => {
+  const loginHead = true;
   const history = useHistory();
   const goToMaker = userId => {
     history.push({
@@ -27,7 +28,7 @@ const Login = ({ authService }) => {
 
   return (
     <section className={styles.login}>
-      <Header />
+      <Header loginHead={loginHead} />
       <section>
         <h1>Login</h1>
         <ul className={styles.list}>
